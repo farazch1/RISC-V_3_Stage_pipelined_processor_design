@@ -13,8 +13,7 @@ module alu (
       4'b0010: opr_res = opr_a << opr_b[4:0];  // SLL (Shift Left Logical)
       4'b0011: opr_res = (opr_a < opr_b) ? 32'b1 : 32'b0;  // SLT (Set Less Than)
       4'b0100:
-      opr_res = ($unsigned(opr_a) < $unsigned(opr_b)) ? 32'b1 :
-          32'b0;  // SLTU (Set Less Than Unsigned)
+      opr_res = ($unsigned(opr_a) < $unsigned(opr_b)) ? 32'b1 : 32'b0;  // SLTU (Set Less Than Unsigned)
       4'b0101: opr_res = opr_a ^ opr_b;  // XOR
       4'b0110: opr_res = opr_a >> opr_b[4:0];  // SRL (Shift Right Logical)
       4'b0111: opr_res = opr_a >>> opr_b[4:0];  // SRA (Shift Right Arithmetic)

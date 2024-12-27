@@ -57,6 +57,7 @@ module processor (
                   .inst_in(inst),
                   .pc_out(pc_out_buff1),
                   .inst_out(inst_buff1));
+
   
   
   

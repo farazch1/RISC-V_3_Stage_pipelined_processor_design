@@ -17,7 +17,6 @@ module DECODE_BUFFER(
         output reg wr_enMW,
         input reg rd_en,
         output reg rd_enMW
-        
     );
     always_ff @(posedge clk) begin
         if (rst) begin

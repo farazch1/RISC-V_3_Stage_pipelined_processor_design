@@ -17,6 +17,4 @@ module INSTFETCH(
             inst_out <= inst_in;
         end
     end
- 
-    
 endmodule
